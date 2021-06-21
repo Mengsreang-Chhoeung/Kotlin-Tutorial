@@ -2,6 +2,12 @@
 
 ![kotlin thumbnail](/_thumbnail_doc/kotlin.jpg "Kotlin Tutorial")
 
+## រៀនតាមរយះ Source Code នៅក្នុង Github Repository:
+
+- **Source Code** គឺមានទៅតាម _folder_ នីមួយៗទៅតាមមេរៀន ដូច្នេះអ្នកអាចរកនៅក្នុង _folder src / main / kotlin_ បាន!
+
+![github-repository thumbnail](/_thumbnail_doc/github-branches.JPG "Github Repository")
+
 ## ជំនួយបន្ថែម:
 
 - ដើម្បីរៀនតាម _Tutorial_ មួយនេះឲ្យកាន់តែឆាប់យល់ ឆាប់ចាប់បាន អ្នកគួរមើលវីដេអូ **Kotlin Crush Course** ខ្លះៗដែរ ដើម្បីជាជំនួយក្នុងការសិក្សាវាបន្ថែម។
