@@ -397,7 +397,7 @@ fun main(){
 }
 ```
 
-- ខាងក្រោមនេះ អ្នកមិនអាចសរសេរបែបបានទេ ព្រោះ **Kotlin** មិន _Support_ នោះទេ!
+- ខាងក្រោមនេះ អ្នកមិនអាចសរសេរបែបនេះបានទេ ព្រោះ **Kotlin** មិន _Support_ នោះទេ!
 
 > src / main / kotlin / 3DataTypes / AppSix.kt
 
