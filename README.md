@@ -183,3 +183,69 @@ fun main(){
 ```
 
 - កូដខាងលើនេះគឺឃើញថាមានការប្រកាសអញ្ញាតបូករួមជាមួយនឹងនៅពីក្រោយឈ្មោះអញ្ញាតគឺមាន _សញ្ញា ចុចពីរ ( : ) និង ប្រភេទទិន្នន័យ_ `var name: String = "John"`។ ត្រង់ចំណុចនេះអ្នកនឹងបានយល់ច្បាស់នៅក្នុងមេរៀន **Data Types**។
+
+- **Kotlin** គឺមិនដូចភាសាផ្សេងៗនោះទេ ពេលប្រកាសអញ្ញាត អ្នកចង់ដាក់ពីប្រភេទទិន្នន័យនៅពីក្រោយឈ្មោះអញ្ញាតក៏បាន ឬក៏មិនដាក់ក៏បាន:
+
+> src / main / kotlin / 2Variables / AppOne.kt
+
+```js
+fun main(){
+    var name = "John"      // String (text)
+    val birthYear = 1975   // Int (number)
+
+    println(name)          // Print the value of name
+    println(birthYear)     // Print the value of birth year
+}
+```
+
+> តែជាជម្រើសដ៏ល្អ អ្នកគួរតែដាក់ប្រភេទទិន្នន័យនៅពីក្រោយឈ្មោះអញ្ញាត ដើម្បីបញ្ជាក់ឲ្យកាន់តែច្បាស់ក្នុងការបញ្ចូលតម្លៃទៅឲ្យអញ្ញាត។
+
+- ខាងក្រោមនេះគឺអ្វីដែលអ្នកគួរកត់ចំណាំទុក នៅពេលបង្កើតអញ្ញាតនិងឲ្យតម្លៃទៅឲ្យអញ្ញាត:
+
+> src / main / kotlin / 2Variables / AppTwo.kt
+
+```js
+fun main(){
+    // This will generate an error:
+    var name
+    name = "John"
+    println(name)
+}
+```
+
+- ការប្រកាសអញ្ញាតនៅខាងលើគឺខុស អ្នកអាចសាកល្បងខាងក្រោមបាន:
+
+> src / main / kotlin / 2Variables / AppTwo.kt
+
+```js
+fun main(){
+    var name: String
+    name = "John"
+    println(name)
+}
+```
+
+- កូដខាងលើមានន័យថា ប្រកាសអញ្ញាតរួចហើយតែមិនទាន់ឲ្យតម្លៃ ចាំឲ្យតម្លៃនៅពេលក្រោយ ហើយចំណុចនេះអ្នកមិនអាចប្រើ `val` ដើម្បីប្រកាសអញ្ញាតបាននោះទេ ព្រោះពេលប្រើ `val` អ្នកត្រូវឲ្យតម្លៃទៅអញ្ញាតដោយផ្ទាល់ គឺមិនអាចឲ្យនៅពេលក្រោយនោះទេ ហើយក៏មិនអាចផ្លាស់ប្តូរតម្លៃបានដូចគ្នា អ្នកអាចមើលឧទាហរណ៍ខាងក្រោមបាន:
+
+> src / main / kotlin / 2Variables / AppThree.kt
+
+```js
+fun main(){
+    val name: String = "John"
+    name = "Robert"  // Error (Val cannot be reassigned)
+    println(name)
+}
+```
+
+- ការប្រកាសអញ្ញាតនៅខាងលើគឺខុស អ្នកអាចសាកល្បងខាងក្រោមបាន:
+
+> src / main / kotlin / 2Variables / AppThree.kt
+
+```js
+fun main(){
+    // When using var, you can change the value whenever you want...
+    var name: String = "John"
+    name = "Robert"
+    println(name)
+}
+```
