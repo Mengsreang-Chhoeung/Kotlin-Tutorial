@@ -74,3 +74,25 @@ fun main(args: Array<String>) {
 > កូដខាងលើគឺជាកូដរបស់ Kotlin ចំណុចបន្ទាប់ អ្នកធ្វើការប្រតិបត្តិកម្មវិធីដោយចុច play នៅស្តាំដៃខាងលើ ហើយអ្នកនឹងឃើញលទ្ធផលនៅក្នុង console ខាងក្រោម។
 
 ![kotlin start program thumbnail](/_thumbnail_doc/kotlin-start-program.JPG "Kotlin Start Program")
+
+## **Kotlin Syntax:**
+
+- ខាងក្រោមនេះគឺជា _Sample code_ របស់ ​**Kotlin**:
+
+```js
+fun main(args: Array<String>) {
+    println("Hello World!")
+}
+```
+
+- ដែល​ `fun` គឺជា _keyword_ ដែលប្រើសម្រាប់បង្កើតអនុគមន៍នៅក្នុងភាសា **Kotlin** ហើយ `main()` គឺជាអនុគមន៍។ `main()` គឺជាអនុគមន៍សម្រាប់ប្រតិបត្តិកូដ **Kotlin**។ ចំណែកឯ `println()` គឺជាអនុគមន៍ដែលប្រើសម្រាប់បង្ហាញ _statement_ អ្វីមួយទៅកាន់ _console_។
+
+> ចំណាំ: ក្នុងភាសា Kotlin នៅពេលដែលបព្ចាប់ statements អ្វីមួយ អ្នកមិនចាំបញ្ចប់ដោយ `semicolon (;)` នោះទេ!
+
+- សម្រាប់ `main()` _function_ នៅពេលនេះ អ្នកមិនចាំបាច់សរសេរច្រើនដូចកូដខាងលើនោះទេ ព្រោះកូដខាងលើគឺប្រើតាំងពី **Kotlin** នៅ _version_ ចាស់ៗ ដូច្នេះអ្នកប្រើកូដខាងក្រោមបាន:
+
+```js
+fun main() {
+  println("Hello World")
+}
+```
