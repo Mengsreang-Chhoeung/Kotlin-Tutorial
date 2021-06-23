@@ -385,3 +385,216 @@ fun main(){
   println(isFishTasty)   // Outputs false
 }
 ```
+
+> Character
+
+> src / main / kotlin / 3DataTypes / AppSix.kt
+
+```js
+fun main(){
+  val myGrade: Char = 'B'
+  println(myGrade)
+}
+```
+
+- ខាងក្រោមនេះ អ្នកមិនអាចសរសេរបែបបានទេ ព្រោះ **Kotlin** មិន _Support_ នោះទេ!
+
+> src / main / kotlin / 3DataTypes / AppSix.kt
+
+```js
+fun main(){
+  // Unlike Java, you cannot use ASCII values to display certain characters. The value 66 would output a "B" in Java, but will generate an error in Kotlin
+  val myLetter: Char = 66
+  println(myLetter) // Error
+}
+```
+
+> String
+
+> src / main / kotlin / 3DataTypes / AppSix.kt
+
+```js
+fun main(){
+  val myText: String = "Hello World"
+  println(myText)
+}
+```
+
+> Array: សម្រាប់ Array អ្នកគួររងចាំសិក្សាពេលក្រោយទៀត តិចទៀតអ្នកដល់ហើយ!
+
+- Type Conversion ជាការផ្លាស់ប្តូរប្រភេទទិន្នន័យរវាងអញ្ញាតមួយទៅអញ្ញាតមួយទៀត ឧទាហរណ៍ ប្តូរពីតម្លៃលេខទៅជាតួអក្សរដូចកូដខាងក្រោម:
+
+```js
+fun main(){
+  var x: Int = 10
+  var y: String = x
+  println(y) // Error: Type mismatch
+}
+```
+
+- អ្នកមិនអាចសរសេររបៀបនឹងទេ អ្នកអាចដោះស្រាយបញ្ហាទាំងនេះបានដោយប្រើ _function_ ទាំងប៉ុន្មាននេះ `toByte()`, `toShort()`, `toInt()`, `toLong()`, `toFloat()`, `toDouble()`, `toChar()` ឬ `toString()`។
+
+> src / main / kotlin / 3DataTypes / AppSeven.kt
+
+```js
+fun main(){
+  // Int to Long
+  val x: Int = 5
+  val y: Long = x.toLong()
+  println(y)
+
+  // Long to Int
+  val a: Long = 100000000L
+  val b: Int = a.toInt()
+  println(b)
+
+  // Byte to Int
+  val c: Byte = 10
+  val d: Int = c.toInt()
+  println(d)
+
+  // Int to Byte
+  val e: Int = 100
+  val f: Byte = e.toByte()
+  println(f)
+
+  // Short to Int
+  val g: Short = 200
+  val h: Int = g.toInt()
+  println(h)
+
+  // Int to Short
+  val i: Int = 400
+  val j: Short = i.toShort()
+  println(j)
+
+  // Float to Double
+  val k: Float = 1.345F
+  val l: Double = k.toDouble()
+  println(l)
+
+  // Double to Float
+  val m: Double = 3.56778
+  val n: Float = m.toFloat()
+  println(n)
+
+  // Int to Double
+  val o: Int = 3000
+  val p: Double = o.toDouble()
+  println(p)
+
+  // Double to Int
+  val q: Double = 34.567
+  val r: Int = q.toInt()
+  println(r)
+
+  // Char to String
+  val s: Char = 'A'
+  val t: String = s.toString()
+  println(t)
+
+  // String to Char
+  val u: String = "Hello World"
+  val v: Char = u[0]
+  println(v)
+
+  // Int to String
+  val w: Int = 3400
+  val ww: String = w.toString()
+  println(ww)
+
+  // String to Double
+  val z: String = "56.77"
+  val zz: Double = z.toDouble()
+  println(zz)
+}
+```
+
+## **Operator** ជាអ្វី?😧
+
+- **Operator** គឺជាប្រតិបត្តិការរបស់អញ្ញាតនិងតម្លៃ ដូចជា ការបូកលេខជាដើម វាត្រូវការតម្លៃចំនួនពីរ ដើម្បីធ្វើការបូកចូលគ្នា។ ខាងក្រោមនេះគឺជា _Arithmetic Operators_:
+
+| Operator                | Example   |
+| ----------------------- | :-------- |
+| + (Addition) បូក        | a + b     |
+| - (Subtraction) ដក      | a – b     |
+| \* (Multiplication) គុណ | a \* b    |
+| / (Division) ចែក        | a / b     |
+| % (Modulus) ចែករកសំណល់  | a % b     |
+| ++ (Increment) ឯកតាកើន  | a++ ឬ ++a |
+| -- (Decrement) ឯកតាថយ   | a-- ឬ --a |
+
+> src / main / kotlin / 4Operations / AppOne.kt
+
+```js
+fun main(){
+  // Addition
+  val x: Int = 100 + 50
+  println(x)
+
+  // Subtraction
+  val y: Int = 100 - 50
+  println(y)
+
+  // Multiplication
+  val a: Int = 100 * 50
+  println(a)
+
+  // Division
+  val b: Int = 100 / 50
+  println(b)
+
+  // Modulus
+  val c: Int = 100 % 30
+  println(c)
+
+  // Increment
+  var d: Int = 100
+  d++
+  ++d
+  println(d)
+
+  // Decrement
+  var e: Int = 200
+  e--
+  --e
+  println(e)
+}
+```
+
+- ខាងក្រោមនេះ គឺ *Arithmetic Operators*​ ដដែលតែអ្នកអាចប្រើរបៀបនេះបានដែរ ជាការបូកទៅឲ្យអញ្ញាតខ្លួនឯង:
+
+| Operator                 | Example  | Same As     |
+| ------------------------ | :------- | :---------- |
+| += (Addition) បូក        | a += 10  | a = a + 10  |
+| -= (Subtraction) ដក      | a -= 10  | a = a - 10  |
+| \*= (Multiplication) គុណ | a \*= 10 | a = a \* 10 |
+| /= (Division) ចែក        | a /= 10  | a = a / 10  |
+| %= (Modulus) ចែករកសំណល់  | a %= 10  | a = a % 10  |
+
+> src / main / kotlin / 4Operations / AppTwo.kt
+
+```js
+fun main(){
+  var x: Int = 100
+  // Addition
+  x += 100
+  println(x)
+
+  // Subtraction
+  x -= 50
+  println(x)
+
+  // Multiplication
+  x *= 2
+  println(x)
+
+  // Division
+  x /= 4
+  println(x)
+
+  // Modulus
+  x %= 7
+  println(x)
+}
+```
