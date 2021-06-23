@@ -153,3 +153,33 @@ fun main(){
     println("Bye World")
 }
 ```
+
+## Variable ជាអ្វី?👀
+
+- **Variable** បកប្រែជាភាសាខ្មែរប្រែថាជា `អញ្ញាត`ដែលគេប្រើសម្រាប់ផ្ទុកទិន្នន័យឬតម្លៃជាបណ្តោះអាសន្ននៅក្នុង _memory_ របស់កុំព្យូទ័រ។ 
+- នៅក្នុង **Kotlin** ការប្រកាសអញ្ញាតគឺអាចប្រើ _keywords_ ចំនួនពីរ ដើម្បីយកមកប្រកាសអញ្ញាតបានរួមមាន `var` និង​ `val` ដែលពីរនេះខុសគ្នាត្រង់ថា ពេលប្រើ `var` អញ្ញាតនឹងអាចផ្លាស់តម្លៃបានគ្រប់ពេល រីឯ `val` វិញគឺមិនអាចផ្លាស់តម្លៃបាននោះទេ។
+
+- ខាងក្រោមនេះ គឺជា syntax នៃការប្រកាសអញ្ញាតនិងផ្ទុកតម្លៃទៅឲ្យអញ្ញាតដូចគ្នា:
+
+```js
+var variableName = value
+val variableName = value
+```
+
+- ដែល `var` និង `val` ជា _keywords_ ដែលប្រើសម្រាប់បង្កើតអញ្ញាត រីឯ `variableName` គឺជាឈ្មោះរបស់អញ្ញាត និង `value` គឺជា តម្លៃដែលត្រូវផ្ទុកទៅឲ្យអញ្ញាត។
+
+- ខាងក្រោមនេះគឺជា _sample code_ ដែលប្រើប្រាស់ **Variable**:
+
+> src / main / kotlin / 2Variables / AppOne.kt
+
+```js
+fun main(){
+    var name: String = "John"      // String (text)
+    val birthYear: Int = 1975   // Int (number)
+
+    println(name)          // Print the value of name
+    println(birthYear)     // Print the value of birth year
+}
+```
+
+- កូដខាងលើនេះគឺឃើញថាមានការប្រកាសអញ្ញាតបូករួមជាមួយនឹងនៅពីក្រោយឈ្មោះអញ្ញាតគឺមាន _សញ្ញា ចុចពីរ (:) និង ប្រភេទទិន្នន័យ_ `var name: String = "John"`។ ត្រង់ចំណុចនេះអ្នកនឹងបានយល់ច្បាស់នៅក្នុងមេរៀន **Data Types**។
