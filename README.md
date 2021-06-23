@@ -96,3 +96,60 @@ fun main() {
   println("Hello World")
 }
 ```
+
+## **Kotlin Output:**
+
+- នៅក្នុងចំណុចនេះ អ្នកនឹងស្គាល់នូវ _function_ ចំនួនពីរដែរប្រើសម្រាប់បង្ហាញតម្លៃឬ _statement_ ដូចគ្នា ដែលរួមមាន `print()` និង `println()` ដែលពីរនេះគឺបង្ហាញតម្លៃដូចគ្នា គ្រាន់តែ `print()` បង្ហាញតម្លៃហើយ មិនចុះបន្ទាត់ ចំណែកឯ `println()` បង្ហាញតម្លៃហើយ ចុះបន្ទាត់។
+
+> src / main / kotlin / 1GetStarted / AppOne.kt
+
+```js
+fun main(){
+    println("Hello World!")
+    println("I am learning Kotlin.")
+    println("It is awesome!")
+}
+```
+
+- ខាងលើនេះគឺប្រើ `println()` _function_ រួមជាមួយនឹងការបញ្ចូលតម្លៃជាប្រភេទអក្សរ ហើយអ្នកក៏អាចបញ្ចូលជាចំនួនលេខបានដូចគ្នា ដែលមានឧទាហរណ៍ដូចខាងក្រោម:
+
+> src / main / kotlin / 1GetStarted / AppTwo.kt
+
+```js
+fun main(){
+    println(3 + 3)
+    println(10 + 20)
+    println(100 + 200)
+}
+```
+
+- ខាងក្រោមនេះគឺប្រើ `print()` _function_ វិញម្តង:
+
+> src / main / kotlin / 1GetStarted / AppThree.kt
+
+```js
+fun main(){
+    print("Hello World! ")
+    print("I am learning Kotlin. ")
+    print("It is awesome!")
+    print(3+ 3)
+}
+```
+
+- ខាងក្រោមនេះគឺប្រើប្រាស់ comment នៅលើកូដ គឺមានពីរវិធីដែលអ្នកប្រើបានគឺ _Single-line Comment_ និង _Multi-line Comment_ ដែល _Single-line Comment_ គឺ comment បានតែមួយបន្ទាត់ រីឯ  _Multi-line Comment_ គឺ comment បានច្រើនបន្ទាត់។
+
+> src / main / kotlin / 1GetStarted / AppFour.kt
+
+```js
+fun main(){
+    // This is a comment
+    println("Hello World")
+
+    println("Hello Kotlin")  // This is a comment
+
+    /* The code below will print the words Hello World
+        to the screen, and it is amazing
+    */
+    println("Bye World")
+}
+```
