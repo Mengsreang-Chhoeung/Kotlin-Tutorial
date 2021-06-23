@@ -249,3 +249,24 @@ fun main(){
     println(name)
 }
 ```
+
+- ខាងក្រោមនេះគឺជាការបង្ហាញតម្លៃដែលបានផ្ទុកនៅក្នុងអញ្ញាតបូករួមជាមួយអក្សរដទៃទៀតដោយប្រើ `println()` និងសញ្ញា `+` ដើម្បីបូកតម្លៃរបស់អញ្ញាតនឹងអក្សរដទៃចូលគ្នា។
+
+> src / main / kotlin / 2Variables / AppFour.kt
+
+```js
+fun main(){
+    val name: String = "John"
+    println("Hello " + name)
+
+    val firstName: String = "John "
+    val lastName: String = "Doe"
+    val fullName: String = firstName + lastName
+    println(fullName)
+
+    val x: Int = 5
+    val y: Int = 6
+    println(x + y)
+}
+```
+

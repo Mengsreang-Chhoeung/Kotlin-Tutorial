@@ -1,18 +1,18 @@
 package `2Variables`
 
 fun main(){
-    val pi = 3.14159265359
+    val pi: Double = 3.14159265359
     println(pi)
 
-    val name = "John"
+    val name: String = "John"
     println("Hello " + name)
 
-    val firstName = "John "
-    val lastName = "Doe"
-    val fullName = firstName + lastName
+    val firstName: String = "John "
+    val lastName: String = "Doe"
+    val fullName: String = firstName + lastName
     println(fullName)
 
-    val x = 5
-    val y = 6
+    val x: Int = 5
+    val y: Int = 6
     println(x + y) // Print the value of x + y
 }
