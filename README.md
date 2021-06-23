@@ -81,7 +81,7 @@ fun main(args: Array<String>) {
 
 ```js
 fun main(args: Array<String>) {
-    println("Hello World!")
+  println("Hello World!")
 }
 ```
 
@@ -105,9 +105,9 @@ fun main() {
 
 ```js
 fun main(){
-    println("Hello World!")
-    println("I am learning Kotlin.")
-    println("It is awesome!")
+  println("Hello World!")
+  println("I am learning Kotlin.")
+  println("It is awesome!")
 }
 ```
 
@@ -117,9 +117,9 @@ fun main(){
 
 ```js
 fun main(){
-    println(3 + 3)
-    println(10 + 20)
-    println(100 + 200)
+  println(3 + 3)
+  println(10 + 20)
+  println(100 + 200)
 }
 ```
 
@@ -129,34 +129,34 @@ fun main(){
 
 ```js
 fun main(){
-    print("Hello World! ")
-    print("I am learning Kotlin. ")
-    print("It is awesome!")
-    print(3+ 3)
+  print("Hello World! ")
+  print("I am learning Kotlin. ")
+  print("It is awesome!")
+  print(3 + 3)
 }
 ```
 
-- ខាងក្រោមនេះគឺប្រើប្រាស់ comment នៅលើកូដ គឺមានពីរវិធីដែលអ្នកប្រើបានគឺ _Single-line Comment_ និង _Multi-line Comment_ ដែល _Single-line Comment_ គឺ comment បានតែមួយបន្ទាត់ រីឯ  _Multi-line Comment_ គឺ comment បានច្រើនបន្ទាត់។
+- ខាងក្រោមនេះគឺប្រើប្រាស់ comment នៅលើកូដ គឺមានពីរវិធីដែលអ្នកប្រើបានគឺ _Single-line Comment_ និង _Multi-line Comment_ ដែល _Single-line Comment_ គឺ comment បានតែមួយបន្ទាត់ រីឯ _Multi-line Comment_ គឺ comment បានច្រើនបន្ទាត់។
 
 > src / main / kotlin / 1GetStarted / AppFour.kt
 
 ```js
 fun main(){
-    // This is a comment
-    println("Hello World")
+  // This is a comment
+  println("Hello World")
 
-    println("Hello Kotlin")  // This is a comment
+  println("Hello Kotlin")  // This is a comment
 
-    /* The code below will print the words Hello World
-        to the screen, and it is amazing
-    */
-    println("Bye World")
+  /* The code below will print the words Hello World
+      to the screen, and it is amazing
+  */
+  println("Bye World")
 }
 ```
 
 ## Variable ជាអ្វី?👀
 
-- **Variable** បកប្រែជាភាសាខ្មែរប្រែថាជា `អញ្ញាត`ដែលគេប្រើសម្រាប់ផ្ទុកទិន្នន័យឬតម្លៃជាបណ្តោះអាសន្ននៅក្នុង _memory_ របស់កុំព្យូទ័រ។ 
+- **Variable** បកប្រែជាភាសាខ្មែរប្រែថាជា `អញ្ញាត`ដែលគេប្រើសម្រាប់ផ្ទុកទិន្នន័យឬតម្លៃជាបណ្តោះអាសន្ននៅក្នុង _memory_ របស់កុំព្យូទ័រ។
 - នៅក្នុង **Kotlin** ការប្រកាសអញ្ញាតគឺអាចប្រើ _keywords_ ចំនួនពីរ ដើម្បីយកមកប្រកាសអញ្ញាតបានរួមមាន `var` និង​ `val` ដែលពីរនេះខុសគ្នាត្រង់ថា ពេលប្រើ `var` អញ្ញាតនឹងអាចផ្លាស់តម្លៃបានគ្រប់ពេល រីឯ `val` វិញគឺមិនអាចផ្លាស់តម្លៃបាននោះទេ។
 
 - ខាងក្រោមនេះ គឺជា syntax នៃការប្រកាសអញ្ញាតនិងផ្ទុកតម្លៃទៅឲ្យអញ្ញាតដូចគ្នា:
@@ -174,11 +174,11 @@ val variableName = value
 
 ```js
 fun main(){
-    var name: String = "John"      // String (text)
-    val birthYear: Int = 1975   // Int (number)
+  var name: String = "John"      // String (text)
+  val birthYear: Int = 1975   // Int (number)
 
-    println(name)          // Print the value of name
-    println(birthYear)     // Print the value of birth year
+  println(name)          // Print the value of name
+  println(birthYear)     // Print the value of birth year
 }
 ```
 
@@ -190,11 +190,11 @@ fun main(){
 
 ```js
 fun main(){
-    var name = "John"      // String (text)
-    val birthYear = 1975   // Int (number)
+  var name = "John"      // String (text)
+  val birthYear = 1975   // Int (number)
 
-    println(name)          // Print the value of name
-    println(birthYear)     // Print the value of birth year
+  println(name)          // Print the value of name
+  println(birthYear)     // Print the value of birth year
 }
 ```
 
@@ -206,10 +206,10 @@ fun main(){
 
 ```js
 fun main(){
-    // This will generate an error:
-    var name
-    name = "John"
-    println(name)
+  // This will generate an error:
+  var name
+  name = "John"
+  println(name)
 }
 ```
 
@@ -219,9 +219,9 @@ fun main(){
 
 ```js
 fun main(){
-    var name: String
-    name = "John"
-    println(name)
+  var name: String
+  name = "John"
+  println(name)
 }
 ```
 
@@ -231,9 +231,9 @@ fun main(){
 
 ```js
 fun main(){
-    val name: String = "John"
-    name = "Robert"  // Error (Val cannot be reassigned)
-    println(name)
+  val name: String = "John"
+  name = "Robert"  // Error (Val cannot be reassigned)
+  println(name)
 }
 ```
 
@@ -243,10 +243,10 @@ fun main(){
 
 ```js
 fun main(){
-    // When using var, you can change the value whenever you want...
-    var name: String = "John"
-    name = "Robert"
-    println(name)
+  // When using var, you can change the value whenever you want...
+  var name: String = "John"
+  name = "Robert"
+  println(name)
 }
 ```
 
@@ -256,26 +256,26 @@ fun main(){
 
 ```js
 fun main(){
-    val name: String = "John"
-    println("Hello " + name)
+  val name: String = "John"
+  println("Hello " + name)
 
-    val firstName: String = "John "
-    val lastName: String = "Doe"
-    val fullName: String = firstName + lastName
-    println(fullName)
+  val firstName: String = "John "
+  val lastName: String = "Doe"
+  val fullName: String = firstName + lastName
+  println(fullName)
 
-    val x: Int = 5
-    val y: Int = 6
-    println(x + y)
+  val x: Int = 5
+  val y: Int = 6
+  println(x + y)
 }
 ```
 
 - ចុងក្រោយនេះអ្នកគួរដឺងពីរបៀបក្នុងការដាក់ឈ្មោះទៅឲ្យអញ្ញាតឲ្យមានលក្ខណះពេញលេញ:
-  - ឈ្មោះអញ្ញាតអាចដាក់ជាតួអក្សរ, ចំនួនលេខ, សញ្ញា _underscore ( _ )_, និងសញ្ញា _dollar ( $ )_
+  - ឈ្មោះអញ្ញាតអាចដាក់ជាតួអក្សរ, ចំនួនលេខ, សញ្ញា _underscore ( _ )_, និងសញ្ញា \_dollar ( $ )_
   - ឈ្មោះអញ្ញាតគួរចាប់ផ្តើមដោយតួអក្សរ
-  - ឈ្មោះអញ្ញាតអាចចាប់ផ្តើមដំបូងជាមួយនឹង _underscore ( _ )_ ឬ _dollar sign ( $ )_ ក៏បាន
+  - ឈ្មោះអញ្ញាតអាចចាប់ផ្តើមដំបូងជាមួយនឹង _underscore ( _ )_ ឬ \_dollar sign ( $ )_ ក៏បាន
   - ឈ្មោះអញ្ញាតគឺមានលក្ខណះ _case sensitive_ គឺថា `myVar` និង `myvar` គឺជាឈ្មោះអញ្ញាតដែលខុសពីគ្នា
-  ​- ឈ្មោះអញ្ញាតអាចចាប់ផ្តើមដោយតួអក្សរ ហើយគួរតែចាប់ផ្តើមតួអក្សរតូចទៅ គឺមានលក្ខណះ _camel case_ គឺបែបនេះ _firstName, lastName_ ...
+    ​- ឈ្មោះអញ្ញាតអាចចាប់ផ្តើមដោយតួអក្សរ ហើយគួរតែចាប់ផ្តើមតួអក្សរតូចទៅ គឺមានលក្ខណះ _camel case_ គឺបែបនេះ _firstName, lastName_ ...
   - ជៀសវាងដាក់ឈ្មោះអញ្ញាតឲ្យដូចទៅនឹង _keyword_ ដែលមាននៅក្នុងភាសា **Kotlin** ដូចជា `String` ឬក៏ផ្សេងៗទៀត។
 
 ## **Data Types ជាអ្វី?**🤨
@@ -286,17 +286,17 @@ fun main(){
 
 ```js
 fun main(){
-    val myNum: Int = 5                // Int
-    val myDoubleNum: Double = 5.99    // Double
-    val myLetter: Char = 'D'          // Char
-    val myBoolean: Boolean = true     // Boolean
-    val myText: String = "Hello"      // String
+  val myNum: Int = 5                // Int
+  val myDoubleNum: Double = 5.99    // Double
+  val myLetter: Char = 'D'          // Char
+  val myBoolean: Boolean = true     // Boolean
+  val myText: String = "Hello"      // String
 
-    println(myNum)
-    println(myDoubleNum)
-    println(myLetter)
-    println(myBoolean)
-    println(myText)
+  println(myNum)
+  println(myDoubleNum)
+  println(myLetter)
+  println(myBoolean)
+  println(myText)
 }
 ```
 
@@ -307,4 +307,81 @@ fun main(){
   - **Strings** ជាប្រភេទទិន្នន័យជាតួអក្សរតែមានច្រើនតួអក្សរ
   - **Arrays** ជាប្រភេទទិន្នន័យដែលអាចផ្ទុកតម្លៃជាច្រើននៅក្នងអញ្ញាតតែមួយ។
 
+> Number
 
+- **Integer Types**: នៅក្នុងនេះគឺមានចំនួនបួនប្រភេទផ្សេងៗគ្នាទៀត ដែលមានដូចខាងក្រោម:
+  - **Byte** ជាប្រភេទទិន្នន័យលេខចំនួនគត់ដែលអាចផ្ទុកតម្លៃពី `-128 ទៅដល់ 127`។
+  - **Short** ជាប្រភេទទិន្នន័យលេខចំនួនគត់ដែលអាចផ្ទុកតម្លៃពី `-32768 ទៅដល់ 32767`។
+  - **Int** ជាប្រភេទទិន្នន័យលេខចំនួនគត់ដែលអាចផ្ទុកតម្លៃពី `-2147483648 ទៅដល់ 2147483647`។
+  - **Long** ជាប្រភេទទិន្នន័យលេខចំនួនគត់ដែលអាចផ្ទុកតម្លៃពី `-9223372036854775808 ទៅដល់ 9223372036854775808`។ ហើយប្រភេទទិន្នន័យមួយនេះគឺខុសពីគេបន្តិចត្រង់ថានៅពីក្រោយតម្លៃអ្នកអាចដាក់អក្សរ `'L'` នៅពីក្រោយក៏បាន ឬក៏អត់ក៏បាន។
+
+> src / main / kotlin / 3DataTypes / AppTwo.kt
+
+```js
+fun main(){
+  // Byte
+  val myNum: Byte = 100
+  println(myNum)
+
+  // Short
+  val myNumTwo: Short = 5000
+  println(myNumTwo)
+
+  // Int
+  val myNumThree: Int = 100000
+  println(myNumThree)
+
+  // Long
+  val myNumFour: Long = 15000000000L
+  println(myNumFour)
+
+  // Int vs Long
+  val myNum1: Int = 2147483647  // Int
+  val myNum2: Long = 2147483648L  // Long
+  println(myNum1)
+  println(myNum2)
+}
+```
+
+- **Floating Types**: នៅក្នុងនេះគឺមានចំនួនពីរប្រភេទផ្សេងៗគ្នាទៀត ដែលមានដូចខាងក្រោម:
+  - **Float** ជាប្រភេទទិន្នន័យលេខចំនួនទសភាគដែលអាចផ្ទុកចំនួនលេខក្រោយក្បៀសបាន `6 ទៅ 7 ខ្ទង់`។ ហើយប្រភេទទិន្នន័យមួយនេះគឺខុសពីគេបន្តិចត្រង់ថានៅពីក្រោយតម្លៃអ្នកត្រូវតែដាក់អក្សរ `'F' ឬ​ 'f'` នៅពីក្រោយ។
+  - **Double** ជាប្រភេទទិន្នន័យលេខចំនួនទសភាគដែលអាចផ្ទុកចំនួនលេខក្រោយក្បៀសបាន `15 ទៅ 16 ខ្ទង់`។
+
+> src / main / kotlin / 3DataTypes / AppFour.kt
+
+```js
+fun main(){
+  // Float
+  val myNum: Float = 5.75F
+  println(myNum)
+
+  // Double
+  val myNumTwo: Double = 19.99
+  println(myNumTwo)
+
+  // Float vs Double
+  val myNum1: Float = 5.994561F
+  val myNum2: Double = 19.95451231564565
+  println(myNum1)
+  println(myNum2)
+
+  // scientific number with an "e" or "E" to indicate the power of 10
+  val myNum3: Float = 35E3F
+  val myNum4: Double = 12E4
+  println(myNum3)
+  println(myNum4)
+}
+```
+
+> Boolean
+
+> src / main / kotlin / 3DataTypes / AppFive.kt
+
+```js
+fun main(){
+  val isKotlinFun: Boolean = true
+  val isFishTasty: Boolean = false
+  println(isKotlinFun)   // Outputs true
+  println(isFishTasty)   // Outputs false
+}
+```
