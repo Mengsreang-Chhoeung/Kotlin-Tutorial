@@ -48,7 +48,7 @@ fun main(){
     }
 
     // Logical not ( ! )
-    if(5 !== 5){
+    if(!(5 == 5 && 4 == 4)){
         println("no")
     }else{
         println("yes")
