@@ -621,7 +621,7 @@ fun main(){
 
 - សម្រាប់ **Operators** ទាំងពីរខាងលើនេះ`(Comparison Operator, Logical Operator)` អ្នកនឹងបានសិក្សាវានៅក្នុងមេរៀន **If-Else Statement**។
 
-## **Strings:** 😬
+## **Strings:** 😟
 
 - នៅក្នុងចំណុចនេះអ្នកនឹងបានសិក្សាទាក់ទងនឹងការប្រើប្រាស់ **String** និងមាន _method_ មួយចំនួនទៀតដែលអាចយកមកប្រើជាមួយនឹង **String** បាន។
 
@@ -630,4 +630,64 @@ var greeting = "Hello"
 var greetingTwo: String = "Hello"
 ```
 
-- កូដខាងលើគឺជាប្រកាសអញ្ញាតដោយប្រើប្រាស់ប្រភេទទិន្នន័យជាតួអក្សរគឺ **String**។
+- កូដខាងលើគឺជាប្រកាសអញ្ញាតដោយប្រើប្រាស់ប្រភេទទិន្នន័យជាតួអក្សរគឺ **String**។ អ្វីដែលអ្នកគួរដឹងបន្តគឺ _**escape string**_ ដែលមានឧទាហរណ៍នៅខាងក្រោម:
+
+```js
+fun main(){
+  println("Hello \nWorld")
+  /*
+  *   Outputs: Hello
+  *            World
+  */
+  println("Hello \tWolrd") // Outputs: Hello   Wolrd
+  println("I\'m a developer!") // Outputs: I'm a developer!
+  println("I love \"Kotlin\"!") // Outputs: I love "Kotlin"!
+}
+```
+
+- **Escape Strings** ខាងលើមានដូចជា `\n` ដែលប្រើសម្រាប់ចុះបន្ទាត់ និង `\t` ប្រើសម្រាប់​ឲ្យមានគម្លាតមួយ _tab_ រីឯ `\` ប្រ់ើសម្រាប់ដាក់ _single quote( ' )_ និង _double quote( " )_ នៅក្នុង **String** បាន។ 
+
+- ខាងក្រោមនេះគឺអ្នកអាចបង្ហាញតម្លៃជាតួអក្សរមួយៗមកបាន ដោយប្រើ `square brackets [ ]` ហើយនៅក្នុង _sqaure brackets_ នោះអ្នកត្រូវដាក់តម្លៃ _index_ ទៅឲ្យតាម _index_ របស់អក្សរដែលអ្នកចង់បង្ហាញ ដែលនៅក្នុង **String** _index_ គឺចាប់ផ្តើមពីលេខ `0` ទៅ ចឹងបើឧទាហរណ៍ថា អ្នកមាន **String** មួយមានតម្លៃ `"Hello"` ចឹងអក្សរ `H` នឹងស្ថិតនៅលើ _index_ លេខ `0` ចំណែកឯ `e` ស្ថិតនៅលើ _index_ លេខ `1` ហើយសម្រាប់តួអក្សរផ្សេងៗទៀតគឺស្ថិតនៅលើ _index_ តាមក្រោយៗចឹងទៀតទៅ។
+
+> src / main / kotlin / 5StringMethods / AppOne.kt
+
+```js
+fun main(){
+  // access the characters
+  var txt = "Hello World"
+  println(txt[0]) // first element (H)
+  println(txt[2]) // third element (l)
+  println(txt.get(4)) // fifth element (o)
+}
+```
+
+- នៅកូដខាងលើគឺឃើញថានៅមាន​ _function_ `get()`  មួយទៀត ដែលវាមិនខុសអីពីការប្រើជាមួយនឹង _square brackets [ ]_ ប៉ុន្មានទេ គឺដូចគ្នា។
+
+- ខាងក្រោមនេះគឺជារាប់ចំនួនតួអក្សរនៅក្នុង **String** ដោយប្រើ _property_ `length` និង _function_ `count()` ដែលពីរនេះគឺប្រើសម្រាប់រាប់ចំនួនតួអក្សរនៅក្នុង **String** ដូចគ្នា។
+
+> src / main / kotlin / 5StringMethods / AppOne.kt
+
+```js
+fun main(){
+  var txtTwo = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  println("The length of the txtTwo string are: " + txtTwo.length)
+  println("The count of the txtTwo string are: " + txtTwo.count())
+}
+```
+
+- ខាងក្រោមនេះគឺជាការប្រើប្រាស់ _function_ មួយចំនួន ដែលអាចឲ្យតួអក្សរនៅក្នុង **String** ទៅជាអក្សរធំឬទៅជាអក្សរតូចតាមដែលអ្នកចង់បាន។
+
+> src / main / kotlin / 5StringMethods / AppOne.kt
+
+```js
+fun main(){
+  // string functions
+  var txtThree = "hello world"
+  println(txtThree.toUpperCase())   // Outputs "HELLO WORLD"
+  println(txtThree.toLowerCase())   // Outputs "hello world"
+  println(txtThree.capitalize()) // Outputs "Hello World"
+  println(txtThree.decapitalize()) // Outputs "hello world"
+}
+```
+
+- ខាងក្រោមនេះគឺជាការប្រើប្រាស់ _function_ មួយចំនួន ដែលប្រើសម្រាប់ប្រៀបធៀបតួអក្សរនៅក្នុង String មួយទៅ String មួយទៀត ដើម្បីចង់ដឹងថា Strings ទាំងពីរមានតម្លៃដូចគ្នាឬអត់ ហើយក្នុង functions នោះគឺមាន arguments ចំនួនពីរ ដែលទីមួយគឺ String ដែលអ្នកត្រូវប្រៀបធៀបជាមួយនឹង String មួយទៀត នឹងទីពីរគឺ ignoreCase = true មានន័យថា អ្នកចង់ប្រៀបធៀបតួអក្សរនៅក្នុង Strings ដោយមិនគិតពីអក្សរតូចឬក៏អក្សរធំ មានន័យថាឲ្យតែអក្សរដូចគ្នាគឺយកហើយ។
