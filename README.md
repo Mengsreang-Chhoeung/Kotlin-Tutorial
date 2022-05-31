@@ -47,7 +47,7 @@
 
 ![intellij idea thumbnail](/_thumbnail_doc/intellij.JPG "Intellij IDEA")
 
-> ចុក New Project
+> ចុច New Project
 
 ![intellij-stater thumbnail](/_thumbnail_doc/intellij-starter.JPG "Intellij IDEA Starter")
 
